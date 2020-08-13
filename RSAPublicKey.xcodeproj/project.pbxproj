@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27B3F85624E550AC00220EEE /* RSAPubKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B3F84E24E550AC00220EEE /* RSAPubKey.m */; };
+		27B3F85724E550AC00220EEE /* BasicEncodingRules.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B3F84F24E550AC00220EEE /* BasicEncodingRules.m */; };
+		27B3F85824E550AC00220EEE /* NSData+RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B3F85424E550AC00220EEE /* NSData+RSA.m */; };
+		27B3F85924E550AC00220EEE /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B3F85524E550AC00220EEE /* NSData+Base64.m */; };
 		2D018FFB1D235FC80049D6EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D018FFA1D235FC80049D6EB /* main.m */; };
 		2D018FFE1D235FC80049D6EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D018FFD1D235FC80049D6EB /* AppDelegate.m */; };
 		2D0190011D235FC80049D6EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0190001D235FC80049D6EB /* ViewController.m */; };
 		2D0190041D235FC80049D6EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0190021D235FC80049D6EB /* Main.storyboard */; };
 		2D0190061D235FC80049D6EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0190051D235FC80049D6EB /* Assets.xcassets */; };
 		2D0190091D235FC80049D6EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0190071D235FC80049D6EB /* LaunchScreen.storyboard */; };
-		2D0190191D2360150049D6EB /* BasicEncodingRules.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0190121D2360150049D6EB /* BasicEncodingRules.m */; };
-		2D01901A1D2360150049D6EB /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0190141D2360150049D6EB /* NSData+Base64.m */; };
-		2D01901B1D2360150049D6EB /* NSData+RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0190161D2360150049D6EB /* NSData+RSA.m */; };
-		2D01901C1D2360150049D6EB /* RSAPubKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0190181D2360150049D6EB /* RSAPubKey.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27B3F84E24E550AC00220EEE /* RSAPubKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAPubKey.m; sourceTree = "<group>"; };
+		27B3F84F24E550AC00220EEE /* BasicEncodingRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicEncodingRules.m; sourceTree = "<group>"; };
+		27B3F85024E550AC00220EEE /* NSData+RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+RSA.h"; sourceTree = "<group>"; };
+		27B3F85124E550AC00220EEE /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		27B3F85224E550AC00220EEE /* RSAPubKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAPubKey.h; sourceTree = "<group>"; };
+		27B3F85324E550AC00220EEE /* BasicEncodingRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicEncodingRules.h; sourceTree = "<group>"; };
+		27B3F85424E550AC00220EEE /* NSData+RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+RSA.m"; sourceTree = "<group>"; };
+		27B3F85524E550AC00220EEE /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		2D018FF61D235FC70049D6EB /* RSAPublicKey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSAPublicKey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D018FFA1D235FC80049D6EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2D018FFC1D235FC80049D6EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -30,14 +38,6 @@
 		2D0190051D235FC80049D6EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D0190081D235FC80049D6EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D01900A1D235FC80049D6EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D0190111D2360150049D6EB /* BasicEncodingRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicEncodingRules.h; sourceTree = "<group>"; };
-		2D0190121D2360150049D6EB /* BasicEncodingRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicEncodingRules.m; sourceTree = "<group>"; };
-		2D0190131D2360150049D6EB /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		2D0190141D2360150049D6EB /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		2D0190151D2360150049D6EB /* NSData+RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+RSA.h"; sourceTree = "<group>"; };
-		2D0190161D2360150049D6EB /* NSData+RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+RSA.m"; sourceTree = "<group>"; };
-		2D0190171D2360150049D6EB /* RSAPubKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAPubKey.h; sourceTree = "<group>"; };
-		2D0190181D2360150049D6EB /* RSAPubKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAPubKey.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +51,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27B3F84D24E550AC00220EEE /* RSAPublicKey */ = {
+			isa = PBXGroup;
+			children = (
+				27B3F85024E550AC00220EEE /* NSData+RSA.h */,
+				27B3F85424E550AC00220EEE /* NSData+RSA.m */,
+				27B3F85224E550AC00220EEE /* RSAPubKey.h */,
+				27B3F84E24E550AC00220EEE /* RSAPubKey.m */,
+				27B3F85324E550AC00220EEE /* BasicEncodingRules.h */,
+				27B3F84F24E550AC00220EEE /* BasicEncodingRules.m */,
+				27B3F85124E550AC00220EEE /* NSData+Base64.h */,
+				27B3F85524E550AC00220EEE /* NSData+Base64.m */,
+			);
+			name = RSAPublicKey;
+			path = Sources/RSAPublicKey;
+			sourceTree = SOURCE_ROOT;
+		};
 		2D018FED1D235FC70049D6EB = {
 			isa = PBXGroup;
 			children = (
@@ -70,7 +86,7 @@
 		2D018FF81D235FC80049D6EB /* RSAPublicKey */ = {
 			isa = PBXGroup;
 			children = (
-				2D0190101D2360150049D6EB /* RSAPubKey */,
+				27B3F84D24E550AC00220EEE /* RSAPublicKey */,
 				2D018FFC1D235FC80049D6EB /* AppDelegate.h */,
 				2D018FFD1D235FC80049D6EB /* AppDelegate.m */,
 				2D018FFF1D235FC80049D6EB /* ViewController.h */,
@@ -90,21 +106,6 @@
 				2D018FFA1D235FC80049D6EB /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2D0190101D2360150049D6EB /* RSAPubKey */ = {
-			isa = PBXGroup;
-			children = (
-				2D0190111D2360150049D6EB /* BasicEncodingRules.h */,
-				2D0190121D2360150049D6EB /* BasicEncodingRules.m */,
-				2D0190131D2360150049D6EB /* NSData+Base64.h */,
-				2D0190141D2360150049D6EB /* NSData+Base64.m */,
-				2D0190151D2360150049D6EB /* NSData+RSA.h */,
-				2D0190161D2360150049D6EB /* NSData+RSA.m */,
-				2D0190171D2360150049D6EB /* RSAPubKey.h */,
-				2D0190181D2360150049D6EB /* RSAPubKey.m */,
-			);
-			path = RSAPubKey;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +147,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -177,13 +179,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B3F85624E550AC00220EEE /* RSAPubKey.m in Sources */,
+				27B3F85824E550AC00220EEE /* NSData+RSA.m in Sources */,
+				27B3F85724E550AC00220EEE /* BasicEncodingRules.m in Sources */,
+				27B3F85924E550AC00220EEE /* NSData+Base64.m in Sources */,
 				2D0190011D235FC80049D6EB /* ViewController.m in Sources */,
-				2D01901B1D2360150049D6EB /* NSData+RSA.m in Sources */,
 				2D018FFE1D235FC80049D6EB /* AppDelegate.m in Sources */,
-				2D01901A1D2360150049D6EB /* NSData+Base64.m in Sources */,
 				2D018FFB1D235FC80049D6EB /* main.m in Sources */,
-				2D01901C1D2360150049D6EB /* RSAPubKey.m in Sources */,
-				2D0190191D2360150049D6EB /* BasicEncodingRules.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +334,7 @@
 				2D01900F1D235FC80049D6EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

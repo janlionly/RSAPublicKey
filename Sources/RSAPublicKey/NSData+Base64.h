@@ -1,15 +1,15 @@
 //
-//  RSAPubKey.h
+//  NSData+Base64.h
 //
-//  Version 1.0.0
+//  Version 1.0.2
 //
-//  Created by yangtu222 on 2016.06.30.
-//  Copyright (C) 2016, andlisoft.com.
+//  Created by Nick Lockwood on 12/01/2012.
+//  Copyright (C) 2012 Charcoal Design
 //
 //  Distributed under the permissive zlib License
 //  Get the latest version from here:
 //
-//  https://github.com/yangtu222/RSAPublicKey
+//  https://github.com/nicklockwood/Base64
 //
 //  This software is provided 'as-is', without any express or implied
 //  warranty.  In no event will the authors be held liable for any damages
@@ -31,11 +31,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Security/Security.h>
 
-@interface RSAPubKey : NSObject 
+@interface NSData (Base64)
 
-+ (SecKeyRef) stringToRSAPubKey: (NSString*) modulus andExponent:(NSString*) exponent; //m and e is base64 encoded.
-+ (SecKeyRef) dataRSAPubKey: (NSData*) modulus andExponent:(NSData*) exponent;
++ (NSData *)dataWithBase64EncodedString:(NSString *)string;
++ (NSData *)dataFromHexString:(NSString *)string;
+- (NSString *)hexadecimalString;
+- (NSString *)base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth;
+- (NSString *)base64EncodedString;
 
 @end

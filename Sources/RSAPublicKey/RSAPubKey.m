@@ -37,6 +37,12 @@
 
 @implementation RSAPubKey
 
++ (SecKeyRef)RSAPubKeyWithModulusHexString:(NSString*)modulus {
+    NSData *data = [NSData dataFromHexString:modulus];
+    NSString *base = [data base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed];
+    return [self stringToRSAPubKey:base andExponent:@"AQAB"];
+}
+
 + (SecKeyRef) stringToRSAPubKey: (NSString*) modulus andExponent:(NSString*) exponent
 {
     NSData* modulusData = [NSData dataWithBase64EncodedString: modulus];
