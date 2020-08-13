@@ -113,7 +113,7 @@
     return [data encryptWithRSA:publicKey];
 }
 
-+ (NSData *)decryptRSAWithPublicKey:(SecKeyRef)publicKey forPlainData:(NSData *)data {
++ (NSData *)decryptRSAWithPublicKey:(SecKeyRef)publicKey forEncryptedData:(NSData *)data {
     return [data decryptWithRSA:publicKey];
 }
 

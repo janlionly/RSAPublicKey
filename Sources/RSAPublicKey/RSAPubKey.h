@@ -40,9 +40,9 @@
 + (SecKeyRef) dataRSAPubKey: (NSData*) modulus andExponent:(NSData*) exponent;
 
 + (NSData *)encryptRSAWithPublicKey:(SecKeyRef)publicKey forPlainData:(NSData *)data;
-+ (NSData *)decryptRSAWithPublicKey:(SecKeyRef)publicKey forPlainData:(NSData *)data;
++ (NSData *)decryptRSAWithPublicKey:(SecKeyRef)publicKey forEncryptedData:(NSData *)data;
 
 + (NSData *)encryptRSAWithModulusHexString:(NSString *)modulus forPlainData:(NSData *)data;
-+ (NSData *)decryptRSAWithModulusHexString:(NSString *)modulus forPlainData:(NSData *)data;
++ (NSData *)decryptRSAWithModulusHexString:(NSString *)modulus forEncryptedData:(NSData *)data;
 
 @end
