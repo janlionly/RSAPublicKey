@@ -36,8 +36,13 @@
 @interface RSAPubKey : NSObject
 
 + (SecKeyRef)RSAPubKeyWithModulusHexString:(NSString*)modulus;
-
 + (SecKeyRef) stringToRSAPubKey: (NSString*) modulus andExponent:(NSString*) exponent; //m and e is base64 encoded.
 + (SecKeyRef) dataRSAPubKey: (NSData*) modulus andExponent:(NSData*) exponent;
+
++ (NSData *)encryptRSAWithPublicKey:(SecKeyRef)publicKey forPlainData:(NSData *)data;
++ (NSData *)decryptRSAWithPublicKey:(SecKeyRef)publicKey forPlainData:(NSData *)data;
+
++ (NSData *)encryptRSAWithModulusHexString:(NSString *)modulus forPlainData:(NSData *)data;
++ (NSData *)decryptRSAWithModulusHexString:(NSString *)modulus forPlainData:(NSData *)data;
 
 @end

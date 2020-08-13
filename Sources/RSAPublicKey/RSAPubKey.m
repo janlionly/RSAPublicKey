@@ -34,6 +34,7 @@
 #import "RSAPubKey.h"
 #import "NSData+Base64.h"
 #import "BasicEncodingRules.h"
+#import "NSData+RSA.h"
 
 @implementation RSAPubKey
 
@@ -106,6 +107,28 @@
 		return nil;
 	}
     return keyRef;
+}
+
++ (NSData *)encryptRSAWithPublicKey:(SecKeyRef)publicKey forPlainData:(NSData *)data {
+    return [data encryptWithRSA:publicKey];
+}
+
++ (NSData *)decryptRSAWithPublicKey:(SecKeyRef)publicKey forPlainData:(NSData *)data {
+    return [data decryptWithRSA:publicKey];
+}
+
++ (NSData *)encryptRSAWithModulusHexString:(NSString *)modulus forPlainData:(NSData *)data {
+    SecKeyRef publicKey = [self RSAPubKeyWithModulusHexString:modulus];
+    NSData *encodedData = [data encryptWithRSA:publicKey];
+    CFRelease(publicKey);
+    return encodedData;
+}
+
++ (NSData *)decryptRSAWithModulusHexString:(NSString *)modulus forEncryptedData:(NSData *)data {
+    SecKeyRef publicKey = [self RSAPubKeyWithModulusHexString:modulus];
+    NSData *plainData = [data decryptWithRSA:publicKey];
+    CFRelease(publicKey);
+    return plainData;
 }
 
 @end
